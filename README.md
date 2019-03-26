@@ -1,8 +1,14 @@
 # dashboard-template
-Live Demo:::::::    https://tarun-bisht.github.io/dashboard-template/
 
 Simple Dashboard template.
+
+
+Live Demo:::::::    https://tarun-bisht.github.io/dashboard-template/
+
+
 Optimized Dashboard template. Uses Jquery and ajax to optimize and load content of dashboard on flow.
+
+CANNOT LOAD AJAX IN GITHUB PAGES SO IT WILL PROMPT ERROR 404. It need a web server to fully experience the template.
 
 To run template in machine make sure to use webserver else it will prompt a error 
 "cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local" that it cannot load file using ajax.
