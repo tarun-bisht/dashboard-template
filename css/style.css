@@ -1,0 +1,185 @@
+/* Main Style*/
+/*Clear Default Settings of tags*/
+body
+{
+    background: #f7f7f7;
+}
+a
+{
+  text-decoration:none;
+  cursor: pointer;
+}
+a:hover
+{
+  text-decoration: none;
+}
+ul
+{
+  list-style: none;
+}
+/*Top Navigation*/
+.navigation
+{
+  background: #ededed;
+  height: 63px;
+  width: 100%;
+  border-bottom: #111 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebtn
+{
+  display: none;
+}
+/*branding on sidebar*/
+.navigation .brand
+{
+  font-size: 24px;
+  color: #111;
+  padding:1rem;
+}
+/*Sidebar Panel*/
+.sidebar
+{
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2A3F54;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+/*sidebar links*/
+.sidebar ul
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:0.5rem;
+}
+.sidebar ul li
+{
+  padding: 1rem;
+}
+.sidebar ul li:hover
+{
+  background: #35495D;
+}
+.sidebar ul li a
+{
+  color: #fff;
+  font-family:cursive;
+  padding-left: 0.5rem;
+}
+.sidebar ul li .dashboard-link
+{
+  justify-content: center;
+  padding-left: 0.5px;
+  margin-left: 1.5rem;
+  font-size: 14px
+}
+.sidebar .secondary-link
+{
+  background:#172d44;
+}
+/*Main Panel*/
+.main-panel
+{
+  margin-left: 25%;
+  padding: 1rem;
+}
+/*Footer Panel*/
+.footer-panel
+{
+  background: #fff;
+  position: fixed;
+  height: 30px;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+@media (max-width: 992px)
+{
+  .navigation
+  {
+    justify-content: flex-start;
+  }
+  .sidebtn
+  {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 22px;
+  }
+  .navigation .sidebtn
+  {
+    align-self: flex-start;
+    color: #111;
+  }
+  .sidebar
+  {
+    width: 0;
+    transition: 0.3s;
+  }
+  .sidebar .sidebtn
+  {
+    color: #fff;
+  }
+  .sidebar-transition
+  {
+    width: 50%;
+  }
+  /*Transition Menu button*/
+  .sidebtn :before
+  {
+    content: "\f0c9";
+  }
+  .crossbtn :before
+  {
+    content: "\f00d" ;
+  }
+  /*Sidebar*/
+  .sidebar ul
+  {
+    padding:2rem;
+  }
+  .sidebar ul li
+  {
+    padding: 1rem;
+  }
+  .sidebar ul li:hover
+  {
+    background: #35495D;
+    font-size: 20px;
+  }
+  .sidebar ul li .dashboard-link
+  {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+  }
+  .main-panel
+  {
+    padding: 2rem;
+    overflow: hidden;
+    margin-left: 0;
+  }
+  .footer-panel
+  {
+    display: none;
+  }
+}
+@media (max-width: 499px)
+{
+  .sidebar-transition
+  {
+    width: 100%;
+  }
+  .main-panel
+  {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+}
