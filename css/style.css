@@ -1,8 +1,10 @@
 /* Main Style*/
 /*Clear Default Settings of tags*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body
 {
     background: #f7f7f7;
+	font-family:'Roboto', sans-serif;
 }
 a
 {
@@ -37,7 +39,7 @@ ul
 {
   font-size: 24px;
   color: #111;
-  padding:1rem;
+  text-transform:uppercase;
 }
 /*Sidebar Panel*/
 .sidebar
@@ -71,7 +73,6 @@ ul
 .sidebar ul li a
 {
   color: #fff;
-  font-family:cursive;
   padding-left: 0.5rem;
 }
 .sidebar ul li .dashboard-link
@@ -94,7 +95,9 @@ ul
 /*Footer Panel*/
 .footer-panel
 {
-  background: #fff;
+  background-color:#212529;
+  padding:0.3rem;
+  color: #fff;
   position: fixed;
   height: 30px;
   bottom: 0;

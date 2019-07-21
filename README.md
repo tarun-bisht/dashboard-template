@@ -1,41 +1,56 @@
 # dashboard-template
 
-Simple Dashboard template.
+<h3>Simple Dashboard template.</h3>
 
 
-Live Demo:::::::    https://tarun-bisht.github.io/dashboard-template/
+Live Demo but not fully accessible:   https://tarun-bisht.github.io/dashboard-template/
 
 
-Optimized Dashboard template. Uses Jquery and ajax to optimize and load content of dashboard on flow.
+<h5>Optimized Dashboard template. Uses Jquery and ajax to optimize and load content of dashboard on flow.</h5>
 
-CANNOT LOAD AJAX IN GITHUB PAGES SO IT WILL PROMPT ERROR 404. It need a web server to fully experience the template.
+<b>CANNOT LOAD AJAX IN file:// and github pages SO IT WILL PROMPT ERROR 404. The template should be run on a web server for full experience</b>
 
-To run template in machine make sure to use webserver else it will prompt a error 
-"cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local" that it cannot load file using ajax.
+<p><h6>Error Prompted without web server</h6>
+<code>"cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local" that it cannot load file using ajax.</code></p>
 
------------------Python 2-----------------
-Change directory into the folder where your file some.html or file(s) exist using the command cd /path/to/your/folder
-Start up a Python web server using the command python -m SimpleHTTPServer
-This will start a web server to host your entire directory listing at http://localhost:8000
-You can use a custom port " python -m SimpleHTTPServer 9000 "giving you link: http://localhost:9000
-
-------------------Python3--------------------
-move to directory where template is placed
-Use command--- " python3 -m http.server  "
-
--------------------Node.js--------------------
-Alternatively, if you demand a more responsive setup and already use nodejs...
-
-Install http-server by typing npm install -g http-server
-
-Change into your working directory, where yoursome.html lives
-
-Start your http server by issuing http-server -c-1
-
-This spins up a Node.js httpd which serves the files in your directory as static files accessible from http://localhost:8080
-
-----------------------Ruby------------------------
-ruby -run -e httpd . -p 8080
-
-----------------------PHP-------------------------
-php -S localhost:8000
+<h3> Methods to start webserver</h3>
+<ul>
+	<li>
+		<h4>Step 1 :</h4>
+		<p> First open terminal inside cloned directory </p>
+	</li>
+	<li>
+		<h4>Step 2 :</h4>
+		<p> Now type the command below on the basis of installed package</p>
+		<ul>
+			<li>
+			<h4> Python 2 :</h4>
+			<p> <code>python -m SimpleHTTPServer </code></p>
+			</li>
+			<li>
+			<h4> Python 3 :</h4>
+			<p> <code>python3 -m http.server </code></p>
+			</li>
+			<li>
+			<h4> Nodejs :</h4>
+			<p> 
+			First install http-server  <code>npm install -g http-server</code><br>
+			<code>http-server -c-1 </code></p>
+			</li>
+			<li>
+			<h4> Ruby :</h4>
+			<p> 
+			<code>ruby -run -e httpd . -p 8000</code></p>
+			</li>
+			<li>
+			<h4> php :</h4>
+			<p> 
+			<code>php -S localhost:8000</code></p>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<h4>Step 3 :</h4>
+		<p> Type url on browser which is shown in terminal </p>
+	</li>
+</ul>
